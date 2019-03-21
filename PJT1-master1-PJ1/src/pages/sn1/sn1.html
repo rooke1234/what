@@ -1,0 +1,162 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title >
+      Menu
+    </ion-title>
+    <ion-buttons right (click)="goHome()">
+      <button ion-button icon-only color="light">
+        <ion-icon name="md-power"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+  <!-- <ion-toolbar no-border-top color="bb">
+    
+  </ion-toolbar> -->
+</ion-header>
+
+
+
+<ion-content>
+   
+    <ion-grid>
+      <ion-row class="main">
+          <ion-col col-4>
+              
+                <div (click)="info()">
+                  <img src="../../assets/imgs/1.png" style="height: 100px;width: 100px" />
+               
+                    
+                      <div class="name">ข้อมูล</div>
+                    
+                      <div class="name">ส่วนตัว</div>
+                    
+                 
+                </div>
+               
+          </ion-col>
+          
+          <ion-col col-4 >
+              <div (click)="p2()">
+                  <img src="../../assets/imgs/2.png" style="height: 100px;width: 100px" />
+                  
+                   
+                    <div class="name">บันทึก</div>
+                    
+                      <div class="name">อาการ</div>
+                  
+                  
+                </div>
+          </ion-col>
+          <ion-col col-4 >
+              <div (click)="maps()">
+                  <img src="../../assets/imgs/3.png" style="height: 100px;width: 100px" />
+                  
+                    <div class="name">พิกัด</div>
+                    
+                      <div class="name"></div>
+                    
+                  
+                </div>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+            <ion-col col-md-6 push-md-3>
+                <div (click)="showdrug()">
+                    <img src="../../assets/imgs/4.png" style="height: 100px;width: 100px" />
+                   
+                      <ion-label class="name">เวลาทานยา</ion-label>
+                      
+                  
+                  </div>
+            </ion-col>
+            <ion-col col-md-3 push-md-3>
+                <div (click)="p5()">
+                    <img src="../../assets/imgs/5.png" style="height: 100px;width: 100px" />
+                    
+                      <ion-label class="name">บทความรู้</ion-label>
+                      
+                    
+                  </div>
+            </ion-col>
+            <ion-col col-md-3 pull-md-3>
+                <div (click)="showdoc()">
+                    <img src="../../assets/imgs/6.png" style="height: 100px;width: 100px" />
+                   
+                      <ion-label class="name">เวลาหมอนัด</ion-label>
+                      
+                    
+                  </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-md-6 push-md-3>
+                  <div (click)="p6()">
+                      <img src="../../assets/imgs/7.png" style="height: 100px;width: 100px" />
+                      
+                        <ion-label class="name">กระทู้</ion-label>
+                        
+                      
+                    </div>
+
+              </ion-col>
+              <ion-col col-md-3 push-md-3>
+                  <div (click)="p8()">
+                      <img src="../../assets/imgs/8.png" style="height: 100px;width: 100px" />
+                     
+                        <ion-label class="name">เบอร์ฉุกเฉิน</ion-label>
+                        
+                    
+                    </div>
+              </ion-col>
+              <ion-col col-md-3 pull-md-3>
+                  <div (click)="p7()">
+                      <img src="../../assets/imgs/9.png" style="height: 100px;width: 100px" />
+                      
+                        <ion-label class="name">เกมส์</ion-label>
+                        
+                      
+                    </div>
+              </ion-col>
+            </ion-row>
+      </ion-grid>
+    
+
+
+</ion-content>
+  <!-- <ion-footer>
+    <ion-toolbar color="bb">
+      <ion-grid>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer> -->
+<!--ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="sn1">
+      <ion-segment-button value="page1">
+        Puppies
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        Ducklings
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ion-content>
+    <div [ngSwitch]="sn1">
+      <ion-list *ngSwitchCase="page1">
+        <ion-item>
+            <ion-thumbnail item-start>
+            </ion-thumbnail>
+             <h2>Ruby</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-header-->
+
+<!--ion-content padding>
+  
+</ion-content-->

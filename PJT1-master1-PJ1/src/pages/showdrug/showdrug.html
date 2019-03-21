@@ -1,0 +1,52 @@
+<!--
+  Generated template for the ShowdrugPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>แจ้งเตือนทานยา</ion-title>
+    
+    <ion-buttons right (click)="gotop3()">
+      <button ion-button icon-only clear color="light">
+        <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </button>
+      </ion-buttons>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding style="background-color: rgb(81, 117, 158)">
+    <ion-card class="card" style="font-size: 15px" color="light" *ngFor="let xa of items" (click)="read(xa.id_patient,xa.drug_type,xa.drug_name,xa.drug_alarm,xa.drug_time,xa.drug_date,xa.id_drug)" >
+      <br>  
+      
+
+      
+      <h2> ประเภท :
+         {{ xa.drug_type }}
+
+        </h2>
+        <br>
+        <h2> ชื่อยา :
+          {{ xa.drug_name }}
+        </h2>
+        <br>
+        <h2> เวลาทานยา :
+          {{ xa.drug_alarm }}
+        </h2>
+        <br>
+        <h2> เวลาแจ้งเตือน :
+          {{ xa.drug_time }}
+        </h2>
+        <br>
+        <h2> วันที่ :
+          {{ xa.drug_date }}
+        </h2>
+        <br>
+      </ion-card>
+</ion-content>
